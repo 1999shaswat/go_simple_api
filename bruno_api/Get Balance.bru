@@ -1,0 +1,19 @@
+meta {
+  name: Get Balance
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8000/account/coins/?username=shade
+  body: none
+  auth: none
+}
+
+params:query {
+  username: shade
+}
+
+headers {
+  Authorization: 1234QWER
+}
